@@ -1,0 +1,24 @@
+{
+  "name": "Memoir-electron",
+  "version": "1.0.0",
+  "description": "A beautiful Note-Taking App to use anywhere anytime.",
+  "main": "src/main.js",
+  "repository": "https://github.com/MemoirApplication/Memoir-electron.git",
+  "author": "Chikobara <albaraa.as.2002@gmail.com>",
+  "license": "AGPL-3.0 license",
+  "scripts": {
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"npm run electron\"",
+    "electron-build": "electron-builder",
+    "pack-mac": "electron-packager . Memoir --platform=darwin --arch=x64  ",
+    "pack-lin": "electron-packager . Memoir --platform=linux  --arch=x64  ",
+    "pack-win": "electron-packager . Memoir --platform=win32  --arch=ia32 "
+  },
+  "devDependencies": {
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "@electron/packager": "^18.3.4"
+  }
+}
