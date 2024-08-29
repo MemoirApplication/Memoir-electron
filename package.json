@@ -1,5 +1,5 @@
 {
-  "name": "Memoir-electron",
+  "name": "Memoir",
   "version": "1.0.0",
   "description": "A beautiful Note-Taking App to use anywhere anytime.",
   "main": "src/main.js",
@@ -11,7 +11,7 @@
     "electron-dev": "concurrently \"npm run dev\" \"npm run electron\"",
     "electron-build": "electron-builder",
     "pack-mac": "electron-packager . Memoir --platform=darwin --arch=x64  ",
-    "pack-lin": "electron-packager . Memoir --platform=linux  --arch=x64  ",
+    "pack-lin": "electron-packager . Memoir --platform=linux  --arch=x64  --icon=public/icon-512x512.png --overwrite --prune=true --out=out ",
     "pack-win": "electron-packager . Memoir --platform=win32  --arch=ia32 "
   },
   "devDependencies": {
