@@ -8,6 +8,7 @@
   "license": "AGPL-3.0 license",
   "scripts": {
     "electron": "electron .",
+    "electron-build": "electron-builder",
     "pack-mac": "electron-packager . Git-it --platform=darwin --arch=x64   --icon=assets/git-it.icns --overwrite --ignore=/out/ --prune=true --out=out --ignore=out/ --ignore=node_modules/ --ignore=trunk/ ",
     "pack-lin": "electron-packager . Memoir --overwrite --platform=linux  --arch=x64 --prune=true --icon=/public/icon-256x256.png --out=out --ignore=/out/ --ignore=/node_modules/ --ignore=/.trunk/ ",
     "pack-win": "electron-packager . Memoir --platform=win32  --arch=ia32 "
